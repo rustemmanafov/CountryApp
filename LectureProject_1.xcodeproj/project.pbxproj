@@ -16,6 +16,11 @@
 		46C4004E287F10A500DEB091 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C4004D287F10A500DEB091 /* MapViewController.swift */; };
 		46C4005028800C6B00DEB091 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C4004F28800C6B00DEB091 /* MapKit.framework */; };
 		46C4005228801CA300DEB091 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C4005128801CA300DEB091 /* CoreLocation.framework */; };
+		46C930582882D8A400E6641A /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C930572882D8A400E6641A /* CityDetailsViewController.swift */; };
+		46C9305A2882D96300E6641A /* CityDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C930592882D96300E6641A /* CityDetailTableViewCell.swift */; };
+		46C930612882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9305E2882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg */; };
+		46C930622882DD3D00E6641A /* bakuboulevard1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9305F2882DD3D00E6641A /* bakuboulevard1.jpg */; };
+		46C930632882DD3D00E6641A /* sehidler-xiyabani.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C930602882DD3D00E6641A /* sehidler-xiyabani.jpg */; };
 		46DCB963287064D400CC0931 /* Country.json in Resources */ = {isa = PBXBuildFile; fileRef = 46DCB962287064D400CC0931 /* Country.json */; };
 		46DCB96528706DB400CC0931 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCB96428706DB400CC0931 /* LoginViewController.swift */; };
 		46DCB96E2872461E00CC0931 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCB96D2872461E00CC0931 /* NavigationViewController.swift */; };
@@ -44,6 +49,11 @@
 		46C4004D287F10A500DEB091 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		46C4004F28800C6B00DEB091 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46C4005128801CA300DEB091 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		46C930572882D8A400E6641A /* CityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewController.swift; sourceTree = "<group>"; };
+		46C930592882D96300E6641A /* CityDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailTableViewCell.swift; sourceTree = "<group>"; };
+		46C9305E2882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15783565219_bf79b50510_b.jpg; sourceTree = "<group>"; };
+		46C9305F2882DD3D00E6641A /* bakuboulevard1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bakuboulevard1.jpg; sourceTree = "<group>"; };
+		46C930602882DD3D00E6641A /* sehidler-xiyabani.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sehidler-xiyabani.jpg"; sourceTree = "<group>"; };
 		46DCB962287064D400CC0931 /* Country.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Country.json; sourceTree = "<group>"; };
 		46DCB96428706DB400CC0931 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46DCB96D2872461E00CC0931 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +110,9 @@
 			children = (
 				463A3990286DFFD60099B264 /* NewTableViewCell.swift */,
 				463A3991286DFFD60099B264 /* NewTableViewCell.xib */,
+				46C9305E2882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg */,
+				46C9305F2882DD3D00E6641A /* bakuboulevard1.jpg */,
+				46C930602882DD3D00E6641A /* sehidler-xiyabani.jpg */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -108,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				477937F6286B328D00EEF403 /* CountryCell.swift */,
+				46C930592882D96300E6641A /* CityDetailTableViewCell.swift */,
 				477937F8286B335E00EEF403 /* CityCell.swift */,
 			);
 			path = Cell;
@@ -117,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				47A5D8BA2866F14900B6BD4E /* CountryListController.swift */,
+				46C930572882D8A400E6641A /* CityDetailsViewController.swift */,
 				46C4004D287F10A500DEB091 /* MapViewController.swift */,
 				46C400472879A96C00DEB091 /* ProfileViewController.swift */,
 				47A5D8BC2866F15900B6BD4E /* CityListController.swift */,
@@ -248,9 +263,12 @@
 				46C4004C287CCB0800DEB091 /* Users.json in Resources */,
 				476C3E752866F53B001EA77A /* design.png in Resources */,
 				463A3993286DFFD60099B264 /* NewTableViewCell.xib in Resources */,
+				46C930632882DD3D00E6641A /* sehidler-xiyabani.jpg in Resources */,
+				46C930612882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg in Resources */,
 				47A5D8B02866DA4E00B6BD4E /* Assets.xcassets in Resources */,
 				46DCB963287064D400CC0931 /* Country.json in Resources */,
 				47A5D8AE2866DA4D00B6BD4E /* Main.storyboard in Resources */,
+				46C930622882DD3D00E6641A /* bakuboulevard1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,11 +328,13 @@
 				47A5D8A72866DA4D00B6BD4E /* AppDelegate.swift in Sources */,
 				477937F7286B328D00EEF403 /* CountryCell.swift in Sources */,
 				47A5D8A92866DA4D00B6BD4E /* SceneDelegate.swift in Sources */,
+				46C9305A2882D96300E6641A /* CityDetailTableViewCell.swift in Sources */,
 				47A5D8BF2866F17000B6BD4E /* CityController.swift in Sources */,
 				477937F9286B335E00EEF403 /* CityCell.swift in Sources */,
 				47A5D8BB2866F14900B6BD4E /* CountryListController.swift in Sources */,
 				46C400482879A96C00DEB091 /* ProfileViewController.swift in Sources */,
 				46DCB96528706DB400CC0931 /* LoginViewController.swift in Sources */,
+				46C930582882D8A400E6641A /* CityDetailsViewController.swift in Sources */,
 				46939750286B565800C7413B /* Model.swift in Sources */,
 				46C4004E287F10A500DEB091 /* MapViewController.swift in Sources */,
 			);

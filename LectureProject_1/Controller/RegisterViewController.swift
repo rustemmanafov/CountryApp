@@ -28,7 +28,6 @@ class RegisterViewController: UIViewController {
         
         showOutlet.titleLabel?.font =  UIFont(name: "Arial", size: 15)
 
-        
         pickerView.delegate = self
         pickerView.dataSource = self
         genderTextField.inputView = pickerView

@@ -19,7 +19,15 @@ struct CityModel: Codable {
     let text: String
     let coordinatex: String
     let coordinatey: String
+  //  let cityDetail: [CityDetailModel]
 }
+
+//struct CityDetailModel: Codable {
+//    let name: String
+//    let image: String
+//    let coordinatex: String
+//    let coordinatey: String
+//}
 
 struct User: Codable {
     let firstName: String

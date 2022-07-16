@@ -2,7 +2,7 @@
 //  CityController.swift
 //  LectureProject_1
 //
-//  Created by Shamkhal Guliyev on 25.06.22.
+//  Created by Rustem Manafov on 25.06.22.
 //
 
 import UIKit
@@ -16,18 +16,29 @@ class CityController: UIViewController {
     @IBOutlet weak var cityImage: UIImageView!
     @IBOutlet weak var cityInfoTextView: UITextView!
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // show citydetail vc
+        cityImage.isUserInteractionEnabled = true
+        cityImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:))))
         
         title = city?.name
         cityImage.image = UIImage(named: city?.image ?? "")
         cityInfoTextView.text = city?.text
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show Location", style: .plain, target: self, action: #selector(addTapped))
+    }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
         
-
+        _ = tapGestureRecognizer.view as! UIImageView
+        
+        let controller = storyboard?.instantiateViewController(withIdentifier: "CityDetailsViewController") as! CityDetailsViewController
+        
+        navigationController?.show(controller, sender: nil)
+        
+        
     }
     
     @objc func addTapped(){

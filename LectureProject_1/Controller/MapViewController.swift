@@ -20,7 +20,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var longitude = ""
     
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

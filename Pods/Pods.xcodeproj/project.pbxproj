@@ -33,10 +33,13 @@
 		1CBE27F289A99F2D6433C347D6924B77 /* Pods-LectureProject_1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LectureProject_1-umbrella.h"; sourceTree = "<group>"; };
 		2BE9D9E8FF8773E86DA60B41D84F3FB3 /* ProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		3469F91CA33E09E29058575040C5C97F /* ProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		46C9305B2882DD1400E6641A /* sehidler-xiyabani.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sehidler-xiyabani.jpg"; sourceTree = "<group>"; };
+		46C9305C2882DD1400E6641A /* 15783565219_bf79b50510_b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15783565219_bf79b50510_b.jpg; sourceTree = "<group>"; };
+		46C9305D2882DD1400E6641A /* bakuboulevard1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bakuboulevard1.jpg; sourceTree = "<group>"; };
 		61047D5CDD0B344180F061B8FECF3CA7 /* Pods-LectureProject_1-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LectureProject_1-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		81C8CB3093723E7FD87BC789A7763341 /* Pods-LectureProject_1-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LectureProject_1-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A41B46248F89741F7B92448C53697EBE /* Pods-LectureProject_1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LectureProject_1-dummy.m"; sourceTree = "<group>"; };
 		ADDC21C953491ABD3316DD4D7768E690 /* ProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressHUD.swift; path = ProgressHUD/Sources/ProgressHUD.swift; sourceTree = "<group>"; };
 		B0A4FE584CABCCFFFC4049C82B62CDC0 /* ProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.release.xcconfig; sourceTree = "<group>"; };
@@ -141,13 +144,15 @@
 				ADDC21C953491ABD3316DD4D7768E690 /* ProgressHUD.swift */,
 				813001BFB7BCC6C2C9877B57A7501196 /* Support Files */,
 			);
-			name = ProgressHUD;
 			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				46C9305C2882DD1400E6641A /* 15783565219_bf79b50510_b.jpg */,
+				46C9305D2882DD1400E6641A /* bakuboulevard1.jpg */,
+				46C9305B2882DD1400E6641A /* sehidler-xiyabani.jpg */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				54A686D342FE18A7C35E0011864D7976 /* Pods */,
