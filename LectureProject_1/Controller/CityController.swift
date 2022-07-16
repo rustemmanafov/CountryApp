@@ -31,14 +31,9 @@ class CityController: UIViewController {
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
-        
-        _ = tapGestureRecognizer.view as! UIImageView
-        
         let controller = storyboard?.instantiateViewController(withIdentifier: "CityDetailsViewController") as! CityDetailsViewController
-        
+        controller.cityPlaces = city?.cityPlaces ?? []
         navigationController?.show(controller, sender: nil)
-        
-        
     }
     
     @objc func addTapped(){
