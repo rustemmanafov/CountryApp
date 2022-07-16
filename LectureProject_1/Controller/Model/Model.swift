@@ -7,30 +7,18 @@
 
 import Foundation
 
-struct CountryModel: Codable{
+struct CountryModel: Codable {
     let name: String
     let flag: String
     let cities: [CityModel]
 }
 
-struct CityModel: Codable{
+struct CityModel: Codable {
     let name: String
     let image: String
     let text: String
-}
-
-
-struct LoginModel: Codable{
-    let email: String
-    let password: String
-}
-
-struct RegisterModel: Codable{
-    let firstName: String
-    let lastName: String
-    let email: String
-    let password: String
-    let gender: String
+    let coordinatex: String
+    let coordinatey: String
 }
 
 struct User: Codable {

@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pvy-S5-vy3">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="fQl-Gi-Zor" customClass="CountryCell" customModule="LectureProject_1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="60"/>
@@ -270,7 +270,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gsb-fW-Ajh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="ZOL-BY-MD1" firstAttribute="leading" secondItem="gsb-fW-Ajh" secondAttribute="leading" constant="20" id="0MF-J3-U28"/>
                             <constraint firstItem="ZOL-BY-MD1" firstAttribute="width" secondItem="VDr-QF-mPF" secondAttribute="width" id="21z-78-O2p"/>
@@ -371,10 +371,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gqk-T5-O6B">
-                                <rect key="frame" x="20" y="375" width="374" height="34"/>
+                                <rect key="frame" x="20" y="375" width="307" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-Fl-t39">
                                 <rect key="frame" x="20" y="439" width="374" height="34"/>
@@ -391,17 +391,27 @@
                                     <action selector="enterAction:" destination="RdX-ce-OMA" eventType="touchUpInside" id="DcS-yv-TRk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deG-Ul-dXN">
+                                <rect key="frame" x="329" y="375" width="65" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show"/>
+                                <connections>
+                                    <action selector="showPassword:" destination="RdX-ce-OMA" eventType="touchUpInside" id="WCc-bs-kc9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ife-eV-iyS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="cH5-Mm-CnH" id="wob-wR-6Nc"/>
-                        <outlet property="enterOutlet" destination="CwD-qd-HtP" id="Z0W-rd-Dtj"/>
+                        <outlet property="enterOutlet" destination="CwD-qd-HtP" id="wGm-WF-q5L"/>
                         <outlet property="firstNameTextField" destination="Y8y-s8-Gy5" id="m68-Dy-cQy"/>
                         <outlet property="genderTextField" destination="c9e-Fl-t39" id="byi-Cq-Si2"/>
                         <outlet property="lastNameTextField" destination="cdf-yH-wZ4" id="4sv-NS-sz1"/>
                         <outlet property="passwordTextField" destination="gqk-T5-O6B" id="iof-Mn-7JF"/>
+                        <outlet property="showOutlet" destination="deG-Ul-dXN" id="u8S-gH-AxD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2M-YN-PFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -526,6 +536,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

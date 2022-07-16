@@ -7,7 +7,6 @@
 
 import UIKit
 
-var fileName = "saveInputs.json"
 
 class RegisterViewController: UIViewController {
     
@@ -17,6 +16,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var genderTextField: UITextField!
     @IBOutlet weak var enterOutlet: UIButton!
+    @IBOutlet weak var showOutlet: UIButton!
     
     var users = [User]()
     var pickerView = UIPickerView()
@@ -26,15 +26,37 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        showOutlet.titleLabel?.font =  UIFont(name: "Arial", size: 15)
+
+        
         pickerView.delegate = self
         pickerView.dataSource = self
         genderTextField.inputView = pickerView
+        emailTextField.keyboardType = .emailAddress
         
         jsonFile = getDocumentsDirectoryUrl().appendingPathComponent("Users.json")
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func enterAction(_ sender: Any) {
         jsonSetup()
+        
+        if firstNameTextField.text?.isEmpty == false && lastNameTextField.text?.isEmpty == false && emailTextField.text?.isEmpty == false && passwordTextField.text?.isEmpty == false && genderTextField.text?.isEmpty == false {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        navigationController?.show(controller, sender: nil)
+        }else{
+            let alert = UIAlertController(title: "Alert", message: "Please fill fields", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     func getDocumentsDirectoryUrl() -> URL{
@@ -66,6 +88,13 @@ class RegisterViewController: UIViewController {
         } catch {
             print("Why dont work?")
         }
+    }
+    
+    
+    @IBAction func showPassword(_ sender: Any) {
+        
+        passwordTextField.isSecureTextEntry = false
+        
     }
     
 }

@@ -18,7 +18,6 @@
 		46C4005228801CA300DEB091 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C4005128801CA300DEB091 /* CoreLocation.framework */; };
 		46DCB963287064D400CC0931 /* Country.json in Resources */ = {isa = PBXBuildFile; fileRef = 46DCB962287064D400CC0931 /* Country.json */; };
 		46DCB96528706DB400CC0931 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCB96428706DB400CC0931 /* LoginViewController.swift */; };
-		46DCB96A2871F55C00CC0931 /* Login.json in Resources */ = {isa = PBXBuildFile; fileRef = 46DCB9692871F55C00CC0931 /* Login.json */; };
 		46DCB96E2872461E00CC0931 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCB96D2872461E00CC0931 /* NavigationViewController.swift */; };
 		476C3E752866F53B001EA77A /* design.png in Resources */ = {isa = PBXBuildFile; fileRef = 476C3E742866F53B001EA77A /* design.png */; };
 		477937F7286B328D00EEF403 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477937F6286B328D00EEF403 /* CountryCell.swift */; };
@@ -47,7 +46,6 @@
 		46C4005128801CA300DEB091 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		46DCB962287064D400CC0931 /* Country.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Country.json; sourceTree = "<group>"; };
 		46DCB96428706DB400CC0931 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		46DCB9692871F55C00CC0931 /* Login.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Login.json; sourceTree = "<group>"; };
 		46DCB96D2872461E00CC0931 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		476C3E742866F53B001EA77A /* design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = design.png; sourceTree = "<group>"; };
 		477937F6286B328D00EEF403 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				46DCB962287064D400CC0931 /* Country.json */,
-				46DCB9692871F55C00CC0931 /* Login.json */,
 				46C4004B287CCB0800DEB091 /* Users.json */,
 			);
 			path = "JSON ";
@@ -250,7 +247,6 @@
 				47A5D8B32866DA4E00B6BD4E /* LaunchScreen.storyboard in Resources */,
 				46C4004C287CCB0800DEB091 /* Users.json in Resources */,
 				476C3E752866F53B001EA77A /* design.png in Resources */,
-				46DCB96A2871F55C00CC0931 /* Login.json in Resources */,
 				463A3993286DFFD60099B264 /* NewTableViewCell.xib in Resources */,
 				47A5D8B02866DA4E00B6BD4E /* Assets.xcassets in Resources */,
 				46DCB963287064D400CC0931 /* Country.json in Resources */,

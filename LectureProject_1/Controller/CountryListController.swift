@@ -17,9 +17,11 @@ class CountryListController: UIViewController, NewTableViewCellDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UINib(nibName: "NewTableViewCell", bundle: nil), forCellReuseIdentifier: "NewTableViewCell")
+        
         jsonSetup()
-        progress()
-        self.tableView.register(UINib(nibName: "NewTableViewCell", bundle: nil), forCellReuseIdentifier: "NewTableViewCell")
+        progress()        
     }
     
     func jsonSetup() {
@@ -43,7 +45,7 @@ class CountryListController: UIViewController, NewTableViewCellDelegate {
         ProgressHUD.animationType = .circleStrokeSpin
         ProgressHUD.show("Loading...")
         
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { _ in
             self.tableView.isHidden = false
             ProgressHUD.dismiss()
         }
@@ -73,7 +75,6 @@ extension CountryListController: UITableViewDataSource, UITableViewDelegate {
         
         // Closure method
 //        cell.buttonCallBack = { index in
-//
 //        self.navigate(index: index)
 //    }
    

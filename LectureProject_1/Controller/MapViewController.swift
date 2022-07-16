@@ -10,15 +10,16 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
-    
-    var locationArrLat = ["40,3754434","40,6798083", "39.7591707" ]
-    var locationArrLon = ["49,8326748", "46,3597178", "46.7511227"]
-    
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var segmentOutlet: UISegmentedControl!
-    
+        
     var manager = CLLocationManager()
+    
+    var latitude = ""
+    var longitude = ""
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +32,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        if let location = locations.first{
             manager.stopUpdatingLocation()
             
-            let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude,
-                                                    longitude: location.coordinate.longitude)
-            let span = MKCoordinateSpan(latitudeDelta: 20, longitudeDelta: 20)
+            let coordinate = CLLocationCoordinate2D(latitude: Double(latitude) ?? 0,
+                                                    longitude: Double(longitude) ?? 0)
+            let span = MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5)
             let region = MKCoordinateRegion(center: coordinate, span: span)
             mapView.setRegion(region, animated: true)
             
@@ -45,7 +45,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             pin.title = "I am here"
             mapView.addAnnotation(pin)
             
-        }
+        
     }
     
     @IBAction func findMe(_ sender: Any) {

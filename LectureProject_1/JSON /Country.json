@@ -7,18 +7,24 @@
             {
                 "name": "Baku",
                 "image": "baku",
+                "coordinatex": "40.3754434",
+                "coordinatey": "49.8326748",
                 "text": "Baku is the capital and largest city of Azerbaijan, as well as the largest city on the Caspian Sea and of the Caucasus region. Baku is located 28 metres (92 ft) below sea level, which makes it the lowest lying national capital in the world and also the largest city in the world located below sea level. Baku lies on the southern shore of the Absheron Peninsula, alongside the Bay of Baku. At the beginning of 2009, Baku's urban population was estimated at just over two million people. Officially, about 25% of all inhabitants of the country live in Baku's metropolitan area. Baku is the sole metropolis in Azerbaijan. Baku is divided into twelve administrative raions and 48 townships. Among these are the townships on the islands of the Baku Archipelago, and the town of Oil Rocks built on stilts in the Caspian Sea, 60 kilometres (37 miles) away from Baku. The Inner City of Baku, along with the Shirvanshah's Palace and Maiden Tower, were inscribed as a UNESCO World Heritage Site in 2000. According to the Lonely Planet's ranking, Baku is also among the world's top ten destinations for urban nightlife. The city is the scientific, cultural, and industrial centre of Azerbaijan. Many sizeable Azerbaijani institutions have their headquarters there. The Baku International Sea Trade Port is capable of handling two million tonnes of general and dry bulk cargoes per year. In recent years, Baku has become an important venue for international events. It hosted the 57th Eurovision Song Contest in 2012, the 2015 European Games, 4th Islamic Solidarity Games, the European Grand Prix in 2016, the Azerbaijan Grand Prix since 2017, hosted the final of the 2018–19 UEFA Europa League, and was one of the host cities for UEFA Euro 2020. The city is renowned for its harsh winds, which is reflected in its nickname, the City of Winds"
                 
             },
             {
                 "name": "Ganja",
                 "image": "ganja",
+                "coordinatex": "40.6798083",
+                "coordinatey": "46.3597178",
                 "text": "Ganja is Azerbaijan's third largest city, with a population of around 335,600. The city has been a historic and cultural center throughout most of its existence. It was the capital of the Ganja Khanate until 1804; after Qajar Iran ceded it to the Russian Empire following the Treaty of Gulistan in 1813, it became part of the administrative divisions of the Georgia Governorate, Georgia-Imeretia Governorate, Tiflis Governorate, and Elisabethpol Governorate.Following the dissolution of the Russian Empire and the Transcaucasian Democratic Federative Republic, it became a part of the Azerbaijan Democratic Republic, followed by Azerbaijan SSR, and, since 1991, the Republic of Azerbaijan"
                 
             },
             {
                 "name": "Shusha",
                 "image": "susa",
+                "coordinatex": "39.7591707",
+                "coordinatey": "46.7511227",
                 "text": "Shusha is a city in Azerbaijan, in the disputed region of Nagorno-Karabakh. Situated at an altitude of 1,400–1,800 metres (4,600–5,900 ft) in the Karabakh mountains, the city was a mountain resort in the Soviet era. Most sources date Shusha's establishment to the 1750s by Panah Ali Khan, founder of the Karabakh Khanate, coinciding with the foundation of the fortress of Shusha. Some attribute this to an alliance between Panah Ali Khan and Melik Shahnazar, the local Armenian prince (melik) of Varanda. In these accounts, the name of the town originated from a nearby Armenian village called Shosh or Shushikent (see § Etymology for alternative explanations). Conversely, some sources describe Shusha as an important center within the self-governing Armenian melikdoms of Karabakh in the 1720s, and others say the plateau was already the site of an Armenian fortification. From the mid-18th century to 1822, Shusha was the capital of the Karabakh Khanate. The town became one of the cultural centers of the South Caucasus after the Russian conquest of the Caucasus region from Qajar Iran in the first half of the 19th century. Over the course of the 19th century, the town grew in size to become a city, and was home to many Armenian and Azerbaijani intellectuals, poets, writers and musicians (including Azerbaijani ashiks, mugham singers and kobuz players). The town has religious, cultural and strategic importance to both groups. Shusha is often considered the cradle of Azerbaijan's music and poetry, and one of the leading centres of the Azerbaijani culture. Shusha also contains a number of Armenian Apostolic churches, including Ghazanchetsots Cathedral and Kanach Zham, and serves as a land link between Nagorno-Karabakh and Armenia, via the Lachin corridor to the west. Throughout modern history, the city fostered a mixed Armenian–Azerbaijani population. The first available demographic information about the city in 1823 suggests the city had an Azerbaijani majority. The Armenian inhabitants of the city steadily grew over time to constitute a majority of the city's population until the Shusha massacre in 1920, in which the Armenian half of the city was destroyed by Azerbaijani forces, resulting in the death or expulsion of the Armenian population, up to 20,000 people."
                 
             }
@@ -31,18 +37,24 @@
             {
                 "name": "Istanbul",
                 "image": "istanbul",
+                "coordinatex": "41.0091982",
+                "coordinatey": "28.9662187",
                 "text": "Istanbul formerly known as Constantinople, is the largest city in Turkey, serving as the country's economic, cultural and historic hub. The city straddles the Bosporus strait, lying in both Europe and Asia, and has a population of over 15 million residents, comprising 19% of the population of Turkey. Istanbul is the most populous European city, and the world's 15th-largest city. The city was founded as Byzantium (Byzantion) in the 7th century BCE by Greek settlers from Megara. In 330 CE, the Roman emperor Constantine the Great made it his imperial capital, renaming it first as New Rome (Nova Roma) and then as Constantinople (Constantinopolis) after himself. The city grew in size and influence, eventually becoming a beacon of the Silk Road and one of the most important cities in history. The city served as an imperial capital for almost 1600 years: during the Roman/Byzantine (330–1204), Latin (1204–1261), late Byzantine (1261–1453), and Ottoman (1453–1922) empires. The city played a key role in the advancement of Christianity during Roman/Byzantine times, hosting four (including Chalcedon (Kadıköy) on the Asian side) of the first seven ecumenical councils (all of which were in present-day Turkey) before its transformation to an Islamic stronghold following the Fall of Constantinople in 1453 CE—especially after becoming the seat of the Ottoman Caliphate in 1517. In 1923, after the Turkish War of Independence, Ankara replaced the city as the capital of the newly formed Republic of Turkey. In 1930, the city's name was officially changed to Istanbul, the Turkish rendering of the appellation Greek speakers used since the eleventh century to colloquially refer to the city."
                 
             },
             {
                 "name": "Izmir",
                 "image": "izmir",
+                "coordinatex": "38.4224548",
+                "coordinatey": "27.1310699",
                 "text": "İzmir, Turkish pronunciation: [ˈizmiɾ]) is a metropolitan city in the western extremity of Anatolia, capital of the province of the same name. It is the third most populous city in Turkey, after Istanbul and Ankara; and the second largest urban agglomeration on the Aegean Sea after Athens. As of the last 31/12/2019 estimation, the city of İzmir had a population of 2,965,900, while İzmir Province had a total population of 4,367,251.Its built-up (or metro) area was home to 3,209,179 inhabitants extending on 9 out of 11 urban districts (all but Urla and Guzelbahce not yet agglomerated) plus Menemen and Menderes largely conurbated. It extends along the outlying waters of the Gulf of İzmir and inland to the north across the Gediz River Delta; to the east along an alluvial plain created by several small streams; and to slightly more rugged terrain in the south."
                 
             },
             {
                 "name": "Mugla",
                 "image": "mugla",
+                "coordinatex": "37.1642053",
+                "coordinatey": "28.2624288",
                 "text": "Mugla is a city in south-western Turkey. The city is the center of the District of Menteşe and Muğla Province, which stretches along Turkey's Aegean coast. Muğla's center is situated inland at an altitude of 660 m and lies at a distance of about 30 km (19 mi) from the nearest seacoast in the Gulf of Gökova to its south-west. Muğla (Menteşe) district area neighbors the district areas of Milas, Yatağan and Kavaklıdere to its north by north-west and those of Ula and Köyceğiz, all of whom are dependent districts. Muğla is the administrative capital of a province that incorporates internationally well-known and popular tourist resorts such as Bodrum, Marmaris, Datça, Dalyan, Fethiye, Ölüdeniz and also the smaller resort of Sarigerme."
                 
             }
@@ -55,18 +67,24 @@
             {
                 "name": "Boston",
                 "image": "bos",
+                "coordinatex": "42.3602534",
+                "coordinatey": "-71.0582912",
                 "text": "Boston officially the City of Boston, is the capital and most populous city of the Commonwealth of Massachusetts in the United States and 24th-most populous city in the country. The city proper covers about 48.4 sq mi (125 km2) with a population of 675,647 in 2020, also making it the most populous city in New England. It is the seat of Suffolk County (although the county government was disbanded on July 1, 1999). The city is the economic and cultural anchor of a substantially larger metropolitan area known as Greater Boston, a metropolitan statistical area (MSA) home to a census-estimated 4.8 million people in 2016 and ranking as the tenth-largest MSA in the country. A broader combined statistical area (CSA), generally corresponding to the commuting area[11] and including Providence, Rhode Island, is home to some 8.2 million people, making it the sixth most populous in the United States."
                 
             },
             {
                 "name": "Los Angeles",
-                "image": "lay",
+                "image": "la",
+                "coordinatex": "34.0536909",
+                "coordinatey": "-118.242766",
                 "text": "Los Angeles often referred to by its initials L.A., is a major city in the U.S. state of California. With a 2020 population of 3,898,747, it is the largest city in the state, as well as the second-largest city in the United States following New York City. Los Angeles is known for its Mediterranean climate, ethnic and cultural diversity, Hollywood film industry, and sprawling metropolitan area. The city of Los Angeles lies in a basin in Southern California. Adjacent to the Pacific Ocean extending through the Santa Monica Mountains and into the San Fernando Valley, it covers about 469 square miles (1,210 km2). It is the seat of Los Angeles County, which is the most populous county in the United States with an estimated 9.86 million residents in 2022."
                 
             },
             {
                 "name": "New York",
                 "image": "ny",
+                "coordinatex": "40.7127281",
+                "coordinatey": "-74.0060152",
                 "text": "New York, often called New York City (NYC) to distinguish it from the State of New York, is the most populous city in the United States. With a 2020 population of 8,804,190 distributed over 300.46 square miles (778.2 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban area. With over 20.1 million people in its metropolitan statistical area and 23.5 million in its combined statistical area as of 2020, New York is one of the world's most populous megacities. New York City has been described as the cultural, financial, and media capital of the world, and is a significant influence on commerce, entertainment, research, technology, education, politics, tourism, dining, art, fashion, and sports. It is the most photographed city in the world. Home to the headquarters of the United Nations, New York is an important center for international diplomacy, an established safe haven for global investors, and is sometimes described as the capital of the world."
                 
             }

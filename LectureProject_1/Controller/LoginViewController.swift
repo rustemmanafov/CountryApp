@@ -20,12 +20,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var registerOutlet: UIButton!
     
     
-    var loginModel: [LoginModel]?
+    var users = [User]()
     var animationPage: [CountryModel]?
+    var jsonData = URL(string: "")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         underlineButton()
         tapGesture()
@@ -37,9 +38,10 @@ class LoginViewController: UIViewController {
         transformAnimation()
         
         // auto filling textfields when opening login view
-        emailTextField.text = "admin@gmail.com"
-        passwordTextField.text = "admin"
+        emailTextField.text = "test@mail.com"
+        passwordTextField.text = "12345"
         
+        jsonData = getDocumentsDirectoryUrl().appendingPathComponent("Users.json")
     }
     
     // Underline Button first code
@@ -56,7 +58,6 @@ class LoginViewController: UIViewController {
         .foregroundColor: UIColor.black,
         .underlineStyle: NSUnderlineStyle.single.rawValue ]
     
-    
     func tapGesture(){
         let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.tapFunction))
         self.dummyView.isUserInteractionEnabled = true
@@ -70,6 +71,7 @@ class LoginViewController: UIViewController {
     func transformAnimation(){
         UIView.animate(withDuration: 2, delay: 0, options: [.autoreverse, .repeat]) {
             self.dummyView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+            
         }
     }
     
@@ -101,7 +103,7 @@ class LoginViewController: UIViewController {
             self.animationView.layer.cornerRadius = 60
             
         } completion: { _ in
-            UIView.animate(withDuration: 3, delay: 0, options: .curveEaseIn) {
+            UIView.animate(withDuration: 2, delay: 0, options: .curveEaseIn) {
                 self.animationView.backgroundColor = .systemMint
                 self.view.layoutIfNeeded()
                 
@@ -116,18 +118,18 @@ class LoginViewController: UIViewController {
     
     fileprivate func animateSetup() {
         emailTextField.center.x = self.view.frame.width + 300
-        UIView.animate(withDuration: 3.0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .allowAnimatedContent, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .allowAnimatedContent, animations: {
             self.emailTextField.center.x = self.view.frame.width / 2
         }, completion: nil)
         
         passwordTextField.center.x = self.view.frame.width - 700
-        UIView.animate(withDuration: 3.0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .allowAnimatedContent, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .allowAnimatedContent, animations: {
             self.passwordTextField.center.x = self.view.frame.width / 2
         }, completion: nil)
         
         buttonLabel.backgroundColor = .clear
         
-        UIView.animate(withDuration: 3, delay: 0) {
+        UIView.animate(withDuration: 1.0, delay: 0) {
             self.buttonLabel.backgroundColor = .systemIndigo
             self.view.layoutIfNeeded()
             
@@ -163,38 +165,50 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func getDocumentsDirectoryUrl() -> URL{
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
     func jsonCalled() {
-        if let jsonData = Bundle.main.url(forResource: "Login", withExtension: "json"), let data = try? Data(contentsOf: jsonData) {
+        if let file = jsonData, let data = try? Data(contentsOf: file) {
             do {
-                loginModel = try JSONDecoder().decode([LoginModel].self, from: data)
-                print("worked login controller")
+                users = try JSONDecoder().decode([User].self, from: data)
                 
-                var i = 0
-                while i < loginModel!.count {
-                    if emailTextField.text == loginModel![i].email && passwordTextField.text == loginModel![i].password {
-                        
-                        let homeViewController = storyboard?.instantiateViewController(withIdentifier: "UINavigationController") as! UINavigationController
-                        self.view.window?.rootViewController = homeViewController
-                        self.view.window?.makeKeyAndVisible()
-                        break
-                    } else {
-                        let alert = UIAlertController(title: "Alert", message: "Something went wrong", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
-                        self.present(alert, animated: true, completion: nil)
-                    }
-                    i += 1
-                }
                 
-            } catch {
+            }
+            catch {
                 print(error.localizedDescription)
                 print("error")
-                
             }
         }
     }
     
+    func checkUsers() -> Bool {
+        var i = 0
+        while i < users.count {
+            if emailTextField.text == users[i].email && passwordTextField.text == users[i].password {
+                return true
+            }
+            i += 1
+        }
+        return false
+    }
+    
     @IBAction func enterAction(_ sender: Any) {
         jsonCalled()
+        if checkUsers() {
+            let homeViewController = storyboard?.instantiateViewController(withIdentifier: "UINavigationController") as! UINavigationController
+            self.view.window?.rootViewController = homeViewController
+            self.view.window?.makeKeyAndVisible()
+            
+        } else{
+            let alert = UIAlertController(title: "Alert", message: "Something went wrong", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
     }
     
     @IBAction func registerAction(_ sender: Any) {
