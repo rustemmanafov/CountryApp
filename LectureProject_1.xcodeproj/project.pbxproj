@@ -21,6 +21,31 @@
 		46C930612882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9305E2882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg */; };
 		46C930622882DD3D00E6641A /* bakuboulevard1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9305F2882DD3D00E6641A /* bakuboulevard1.jpg */; };
 		46C930632882DD3D00E6641A /* sehidler-xiyabani.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C930602882DD3D00E6641A /* sehidler-xiyabani.jpg */; };
+		46C93067288369BF00E6641A /* heyder eliyev parki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C93064288369BF00E6641A /* heyder eliyev parki.jpg */; };
+		46C93068288369BF00E6641A /* nizami gencevi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C93065288369BF00E6641A /* nizami gencevi.jpg */; };
+		46C93069288369BF00E6641A /* xan bagi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C93066288369BF00E6641A /* xan bagi.jpg */; };
+		46C9306E28836B9C00E6641A /* Şuşa_qalası_(2).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9306B28836B9C00E6641A /* Şuşa_qalası_(2).jpg */; };
+		46C9306F28836B9C00E6641A /* 15889310295328419170_1000x669.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9306C28836B9C00E6641A /* 15889310295328419170_1000x669.jpg */; };
+		46C9307028836B9C00E6641A /* Manshet_5fabeaf7b7b76.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9306D28836B9C00E6641A /* Manshet_5fabeaf7b7b76.jpg */; };
+		46C9307428836BFF00E6641A /* 711b55.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307128836BFF00E6641A /* 711b55.jpg */; };
+		46C9307528836BFF00E6641A /* fft107_mf5805260.Jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307228836BFF00E6641A /* fft107_mf5805260.Jpeg */; };
+		46C9307628836BFF00E6641A /* istanbulda-gezilecek-tarihi-camiler.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307328836BFF00E6641A /* istanbulda-gezilecek-tarihi-camiler.jpg */; };
+		46C9307A28836C6A00E6641A /* Foça-Sahil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307728836C6A00E6641A /* Foça-Sahil.jpg */; };
+		46C9307B28836C6A00E6641A /* 172772saat-kulesi-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307828836C6A00E6641A /* 172772saat-kulesi-1.jpg */; };
+		46C9307C28836C6A00E6641A /* izmir1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307928836C6A00E6641A /* izmir1.jpg */; };
+		46C9308028836CBA00E6641A /* hUECGP5GXU7y1jRn5cb6eaae6def5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307D28836CBA00E6641A /* hUECGP5GXU7y1jRn5cb6eaae6def5.jpeg */; };
+		46C9308128836CBA00E6641A /* istockphoto-649666134-612x612.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307E28836CBA00E6641A /* istockphoto-649666134-612x612.jpg */; };
+		46C9308228836CBA00E6641A /* shutterstock_714788146.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9307F28836CBA00E6641A /* shutterstock_714788146.jpg */; };
+		46C9308628836D3800E6641A /* 800px-Panoramic_Boston.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9308328836D3800E6641A /* 800px-Panoramic_Boston.jpg */; };
+		46C9308728836D3800E6641A /* bostona-nasil-gidilir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9308428836D3800E6641A /* bostona-nasil-gidilir.jpg */; };
+		46C9308828836D3800E6641A /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9308528836D3800E6641A /* maxresdefault.jpg */; };
+		46C9308C28836DC500E6641A /* tsr00040634840765464473750.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9308928836DC500E6641A /* tsr00040634840765464473750.jpg */; };
+		46C9308D28836DC500E6641A /* 8-Los-Angeles-istock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9308A28836DC500E6641A /* 8-Los-Angeles-istock.jpg */; };
+		46C9308E28836DC500E6641A /* los-angeles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9308B28836DC500E6641A /* los-angeles.jpg */; };
+		46C9309228836E8E00E6641A /* 640px-Lower_Manhattan_skyline_-_June_2017.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9308F28836E8D00E6641A /* 640px-Lower_Manhattan_skyline_-_June_2017.jpg */; };
+		46C9309328836E8E00E6641A /* new-york-gezi-rehberi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9309028836E8E00E6641A /* new-york-gezi-rehberi.jpg */; };
+		46C9309428836E8E00E6641A /* New_york3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9309128836E8E00E6641A /* New_york3.jpg */; };
+		46C930962884216E00E6641A /* CityPlacesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C930952884216E00E6641A /* CityPlacesMapViewController.swift */; };
 		46DCB963287064D400CC0931 /* Country.json in Resources */ = {isa = PBXBuildFile; fileRef = 46DCB962287064D400CC0931 /* Country.json */; };
 		46DCB96528706DB400CC0931 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCB96428706DB400CC0931 /* LoginViewController.swift */; };
 		46DCB96E2872461E00CC0931 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCB96D2872461E00CC0931 /* NavigationViewController.swift */; };
@@ -54,6 +79,31 @@
 		46C9305E2882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15783565219_bf79b50510_b.jpg; sourceTree = "<group>"; };
 		46C9305F2882DD3D00E6641A /* bakuboulevard1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bakuboulevard1.jpg; sourceTree = "<group>"; };
 		46C930602882DD3D00E6641A /* sehidler-xiyabani.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sehidler-xiyabani.jpg"; sourceTree = "<group>"; };
+		46C93064288369BF00E6641A /* heyder eliyev parki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "heyder eliyev parki.jpg"; sourceTree = "<group>"; };
+		46C93065288369BF00E6641A /* nizami gencevi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "nizami gencevi.jpg"; sourceTree = "<group>"; };
+		46C93066288369BF00E6641A /* xan bagi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "xan bagi.jpg"; sourceTree = "<group>"; };
+		46C9306B28836B9C00E6641A /* Şuşa_qalası_(2).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Şuşa_qalası_(2).jpg"; sourceTree = "<group>"; };
+		46C9306C28836B9C00E6641A /* 15889310295328419170_1000x669.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15889310295328419170_1000x669.jpg; sourceTree = "<group>"; };
+		46C9306D28836B9C00E6641A /* Manshet_5fabeaf7b7b76.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Manshet_5fabeaf7b7b76.jpg; sourceTree = "<group>"; };
+		46C9307128836BFF00E6641A /* 711b55.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 711b55.jpg; sourceTree = "<group>"; };
+		46C9307228836BFF00E6641A /* fft107_mf5805260.Jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fft107_mf5805260.Jpeg; sourceTree = "<group>"; };
+		46C9307328836BFF00E6641A /* istanbulda-gezilecek-tarihi-camiler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "istanbulda-gezilecek-tarihi-camiler.jpg"; sourceTree = "<group>"; };
+		46C9307728836C6A00E6641A /* Foça-Sahil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Foça-Sahil.jpg"; sourceTree = "<group>"; };
+		46C9307828836C6A00E6641A /* 172772saat-kulesi-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "172772saat-kulesi-1.jpg"; sourceTree = "<group>"; };
+		46C9307928836C6A00E6641A /* izmir1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = izmir1.jpg; sourceTree = "<group>"; };
+		46C9307D28836CBA00E6641A /* hUECGP5GXU7y1jRn5cb6eaae6def5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hUECGP5GXU7y1jRn5cb6eaae6def5.jpeg; sourceTree = "<group>"; };
+		46C9307E28836CBA00E6641A /* istockphoto-649666134-612x612.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "istockphoto-649666134-612x612.jpg"; sourceTree = "<group>"; };
+		46C9307F28836CBA00E6641A /* shutterstock_714788146.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_714788146.jpg; sourceTree = "<group>"; };
+		46C9308328836D3800E6641A /* 800px-Panoramic_Boston.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "800px-Panoramic_Boston.jpg"; sourceTree = "<group>"; };
+		46C9308428836D3800E6641A /* bostona-nasil-gidilir.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bostona-nasil-gidilir.jpg"; sourceTree = "<group>"; };
+		46C9308528836D3800E6641A /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
+		46C9308928836DC500E6641A /* tsr00040634840765464473750.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tsr00040634840765464473750.jpg; sourceTree = "<group>"; };
+		46C9308A28836DC500E6641A /* 8-Los-Angeles-istock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "8-Los-Angeles-istock.jpg"; sourceTree = "<group>"; };
+		46C9308B28836DC500E6641A /* los-angeles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "los-angeles.jpg"; sourceTree = "<group>"; };
+		46C9308F28836E8D00E6641A /* 640px-Lower_Manhattan_skyline_-_June_2017.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "640px-Lower_Manhattan_skyline_-_June_2017.jpg"; sourceTree = "<group>"; };
+		46C9309028836E8E00E6641A /* new-york-gezi-rehberi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "new-york-gezi-rehberi.jpg"; sourceTree = "<group>"; };
+		46C9309128836E8E00E6641A /* New_york3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = New_york3.jpg; sourceTree = "<group>"; };
+		46C930952884216E00E6641A /* CityPlacesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPlacesMapViewController.swift; sourceTree = "<group>"; };
 		46DCB962287064D400CC0931 /* Country.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Country.json; sourceTree = "<group>"; };
 		46DCB96428706DB400CC0931 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46DCB96D2872461E00CC0931 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +138,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46C9306A288369CB00E6641A /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				46C9305E2882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg */,
+				46C930602882DD3D00E6641A /* sehidler-xiyabani.jpg */,
+				46C9308F28836E8D00E6641A /* 640px-Lower_Manhattan_skyline_-_June_2017.jpg */,
+				46C9309128836E8E00E6641A /* New_york3.jpg */,
+				46C9309028836E8E00E6641A /* new-york-gezi-rehberi.jpg */,
+				46C9306C28836B9C00E6641A /* 15889310295328419170_1000x669.jpg */,
+				46C9308328836D3800E6641A /* 800px-Panoramic_Boston.jpg */,
+				46C9308428836D3800E6641A /* bostona-nasil-gidilir.jpg */,
+				46C9308528836D3800E6641A /* maxresdefault.jpg */,
+				46C9307128836BFF00E6641A /* 711b55.jpg */,
+				46C9307828836C6A00E6641A /* 172772saat-kulesi-1.jpg */,
+				46C9307728836C6A00E6641A /* Foça-Sahil.jpg */,
+				46C9307928836C6A00E6641A /* izmir1.jpg */,
+				46C9307228836BFF00E6641A /* fft107_mf5805260.Jpeg */,
+				46C9307328836BFF00E6641A /* istanbulda-gezilecek-tarihi-camiler.jpg */,
+				46C9307D28836CBA00E6641A /* hUECGP5GXU7y1jRn5cb6eaae6def5.jpeg */,
+				46C9308A28836DC500E6641A /* 8-Los-Angeles-istock.jpg */,
+				46C9308B28836DC500E6641A /* los-angeles.jpg */,
+				46C9308928836DC500E6641A /* tsr00040634840765464473750.jpg */,
+				46C9307E28836CBA00E6641A /* istockphoto-649666134-612x612.jpg */,
+				46C9307F28836CBA00E6641A /* shutterstock_714788146.jpg */,
+				46C9306D28836B9C00E6641A /* Manshet_5fabeaf7b7b76.jpg */,
+				46C9306B28836B9C00E6641A /* Şuşa_qalası_(2).jpg */,
+				46C93064288369BF00E6641A /* heyder eliyev parki.jpg */,
+				46C93065288369BF00E6641A /* nizami gencevi.jpg */,
+				46C93066288369BF00E6641A /* xan bagi.jpg */,
+				46C9305F2882DD3D00E6641A /* bakuboulevard1.jpg */,
+			);
+			path = Pictures;
+			sourceTree = "<group>";
+		};
 		46DCB9662871D91600CC0931 /* JSON  */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,9 +194,7 @@
 			children = (
 				463A3990286DFFD60099B264 /* NewTableViewCell.swift */,
 				463A3991286DFFD60099B264 /* NewTableViewCell.xib */,
-				46C9305E2882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg */,
-				46C9305F2882DD3D00E6641A /* bakuboulevard1.jpg */,
-				46C930602882DD3D00E6641A /* sehidler-xiyabani.jpg */,
+				46C9306A288369CB00E6641A /* Pictures */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -131,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				47A5D8BA2866F14900B6BD4E /* CountryListController.swift */,
+				46C930952884216E00E6641A /* CityPlacesMapViewController.swift */,
 				46C930572882D8A400E6641A /* CityDetailsViewController.swift */,
 				46C4004D287F10A500DEB091 /* MapViewController.swift */,
 				46C400472879A96C00DEB091 /* ProfileViewController.swift */,
@@ -259,16 +342,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C9308D28836DC500E6641A /* 8-Los-Angeles-istock.jpg in Resources */,
+				46C9308128836CBA00E6641A /* istockphoto-649666134-612x612.jpg in Resources */,
+				46C9307428836BFF00E6641A /* 711b55.jpg in Resources */,
+				46C9307028836B9C00E6641A /* Manshet_5fabeaf7b7b76.jpg in Resources */,
 				47A5D8B32866DA4E00B6BD4E /* LaunchScreen.storyboard in Resources */,
 				46C4004C287CCB0800DEB091 /* Users.json in Resources */,
 				476C3E752866F53B001EA77A /* design.png in Resources */,
+				46C9307C28836C6A00E6641A /* izmir1.jpg in Resources */,
+				46C93069288369BF00E6641A /* xan bagi.jpg in Resources */,
 				463A3993286DFFD60099B264 /* NewTableViewCell.xib in Resources */,
 				46C930632882DD3D00E6641A /* sehidler-xiyabani.jpg in Resources */,
+				46C9307B28836C6A00E6641A /* 172772saat-kulesi-1.jpg in Resources */,
+				46C9307A28836C6A00E6641A /* Foça-Sahil.jpg in Resources */,
+				46C9306E28836B9C00E6641A /* Şuşa_qalası_(2).jpg in Resources */,
+				46C93067288369BF00E6641A /* heyder eliyev parki.jpg in Resources */,
+				46C9308228836CBA00E6641A /* shutterstock_714788146.jpg in Resources */,
 				46C930612882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg in Resources */,
 				47A5D8B02866DA4E00B6BD4E /* Assets.xcassets in Resources */,
 				46DCB963287064D400CC0931 /* Country.json in Resources */,
+				46C9309428836E8E00E6641A /* New_york3.jpg in Resources */,
+				46C9309328836E8E00E6641A /* new-york-gezi-rehberi.jpg in Resources */,
+				46C9309228836E8E00E6641A /* 640px-Lower_Manhattan_skyline_-_June_2017.jpg in Resources */,
+				46C9307528836BFF00E6641A /* fft107_mf5805260.Jpeg in Resources */,
 				47A5D8AE2866DA4D00B6BD4E /* Main.storyboard in Resources */,
+				46C9308C28836DC500E6641A /* tsr00040634840765464473750.jpg in Resources */,
+				46C9308628836D3800E6641A /* 800px-Panoramic_Boston.jpg in Resources */,
+				46C9308728836D3800E6641A /* bostona-nasil-gidilir.jpg in Resources */,
+				46C9308E28836DC500E6641A /* los-angeles.jpg in Resources */,
+				46C93068288369BF00E6641A /* nizami gencevi.jpg in Resources */,
+				46C9307628836BFF00E6641A /* istanbulda-gezilecek-tarihi-camiler.jpg in Resources */,
 				46C930622882DD3D00E6641A /* bakuboulevard1.jpg in Resources */,
+				46C9308828836D3800E6641A /* maxresdefault.jpg in Resources */,
+				46C9308028836CBA00E6641A /* hUECGP5GXU7y1jRn5cb6eaae6def5.jpeg in Resources */,
+				46C9306F28836B9C00E6641A /* 15889310295328419170_1000x669.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +439,7 @@
 				47A5D8BF2866F17000B6BD4E /* CityController.swift in Sources */,
 				477937F9286B335E00EEF403 /* CityCell.swift in Sources */,
 				47A5D8BB2866F14900B6BD4E /* CountryListController.swift in Sources */,
+				46C930962884216E00E6641A /* CityPlacesMapViewController.swift in Sources */,
 				46C400482879A96C00DEB091 /* ProfileViewController.swift in Sources */,
 				46DCB96528706DB400CC0931 /* LoginViewController.swift in Sources */,
 				46C930582882D8A400E6641A /* CityDetailsViewController.swift in Sources */,

@@ -208,6 +208,35 @@
             </objects>
             <point key="canvasLocation" x="4371" y="794"/>
         </scene>
+        <!--City Places Map View Controller-->
+        <scene sceneID="Rrj-W4-NXa">
+            <objects>
+                <viewController storyboardIdentifier="CityPlacesMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nbm-Uj-GkM" customClass="CityPlacesMapViewController" customModule="LectureProject_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GIk-53-YWd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n22-pf-bOV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N6b-Qk-wGJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N6b-Qk-wGJ" firstAttribute="trailing" secondItem="n22-pf-bOV" secondAttribute="trailing" id="mWH-J1-cYm"/>
+                            <constraint firstItem="n22-pf-bOV" firstAttribute="top" secondItem="N6b-Qk-wGJ" secondAttribute="top" id="mXK-ez-2gm"/>
+                            <constraint firstItem="n22-pf-bOV" firstAttribute="leading" secondItem="N6b-Qk-wGJ" secondAttribute="leading" id="uWX-jv-Dph"/>
+                            <constraint firstItem="N6b-Qk-wGJ" firstAttribute="bottom" secondItem="n22-pf-bOV" secondAttribute="bottom" id="vh2-cN-c8V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PlacesMapView" destination="n22-pf-bOV" id="hy6-HO-NZ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qA-Na-RYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5049" y="794"/>
+        </scene>
         <!--City Controller-->
         <scene sceneID="c5Z-4m-VYT">
             <objects>

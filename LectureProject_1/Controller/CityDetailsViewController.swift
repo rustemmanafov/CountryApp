@@ -8,13 +8,14 @@
 import UIKit
 
 class CityDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    //    var arr = ["15783565219_bf79b50510_b.jpg", "bakuboulevard1.jpg", "sehidler-xiyabani.jpg" ]
+    
     var cityPlaces = [CityPlaces]()
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
     }
     
@@ -30,5 +31,16 @@ class CityDetailsViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "CityPlacesMapViewController") as! CityPlacesMapViewController
+        
+        controller.cityMap?.coordinatex = cityPlaces[indexPath.row].coordinatex
+        controller.cityMap?.coordinatey = cityPlaces[indexPath.row].coordinatey
+
+        
+        
+        navigationController?.show(controller, sender: nil)
     }
 }

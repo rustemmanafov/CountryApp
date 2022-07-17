@@ -25,8 +25,8 @@ struct CityModel: Codable {
 struct CityPlaces: Codable {
     let name: String
     let image: String
-    let coordinatex: String
-    let coordinatey: String
+    var coordinatex: String
+    var coordinatey: String
 }
 
 struct User: Codable {
