@@ -2,7 +2,7 @@
 //  CityDetailsViewController.swift
 //  LectureProject_1
 //
-//  Created by Rustem Manafov on 16.07.22.
+//  Created by Rustam Manafov on 16.07.22.
 //
 
 import UIKit
@@ -15,9 +15,11 @@ class CityDetailsViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         
     }
+    
+   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         cityPlaces.count
@@ -36,11 +38,9 @@ class CityDetailsViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "CityPlacesMapViewController") as! CityPlacesMapViewController
         
-        controller.cityMap?.coordinatex = cityPlaces[indexPath.row].coordinatex
-        controller.cityMap?.coordinatey = cityPlaces[indexPath.row].coordinatey
-
-        
-        
+        controller.latitude = cityPlaces[indexPath.row].coordinatex
+        controller.longitude = cityPlaces[indexPath.row].coordinatey
+        controller.title = cityPlaces[indexPath.row].name
         navigationController?.show(controller, sender: nil)
     }
 }

@@ -2,7 +2,7 @@
 //  CityController.swift
 //  LectureProject_1
 //
-//  Created by Rustem Manafov on 25.06.22.
+//  Created by Rustam Manafov on 25.06.22.
 //
 
 import UIKit

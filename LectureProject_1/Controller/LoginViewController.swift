@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  LectureProject_1
 //
-//  Created by Rustem Manafov on 02.07.22.
+//  Created by Rustam Manafov on 02.07.22.
 //
 
 import UIKit

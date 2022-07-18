@@ -2,7 +2,7 @@
 //  CountryListController.swift
 //  LectureProject_1
 //
-//  Created by Rustem Manafov on 25.06.22.
+//  Created by Rustam Manafov on 25.06.22.
 //
 
 import UIKit
@@ -14,6 +14,7 @@ class CountryListController: UIViewController, NewTableViewCellDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var model = [CountryModel]()
+    var profile: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,27 @@ class CountryListController: UIViewController, NewTableViewCellDelegate {
         tableView.register(UINib(nibName: "NewTableViewCell", bundle: nil), forCellReuseIdentifier: "NewTableViewCell")
         
         jsonSetup()
-        progress()        
+        progress()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(addTapped))
     }
+    
+    @objc func addTapped(){
+        print("Worked")
+        
+        let controller = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        
+        controller.firstNameLbl?.text = profile?.firstName
+        controller.lastNameLbl?.text = profile?.lastName
+        controller.emailLbl?.text = profile?.email
+        controller.passwordLbl?.text = profile?.password
+        controller.genderLbl?.text = profile?.gender
+        
+        show(controller, sender: nil)
+        
+    }
+    
+    
     
     func jsonSetup() {
         if let jsonFile = Bundle.main.url(forResource: "Country", withExtension: "json"), let data = try? Data(contentsOf: jsonFile){

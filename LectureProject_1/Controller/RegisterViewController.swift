@@ -2,7 +2,7 @@
 //  RegisterViewController.swift
 //  LectureProject_1
 //
-//  Created by Rustem Manafov on 09.07.22.
+//  Created by Rustam Manafov on 09.07.22.
 //
 
 import UIKit

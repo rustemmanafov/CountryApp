@@ -194,7 +194,6 @@
 			children = (
 				463A3990286DFFD60099B264 /* NewTableViewCell.swift */,
 				463A3991286DFFD60099B264 /* NewTableViewCell.xib */,
-				46C9306A288369CB00E6641A /* Pictures */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -259,6 +258,7 @@
 				47A5D8B12866DA4E00B6BD4E /* LaunchScreen.storyboard */,
 				47A5D8B42866DA4E00B6BD4E /* Info.plist */,
 				476C3E742866F53B001EA77A /* design.png */,
+				46C9306A288369CB00E6641A /* Pictures */,
 			);
 			path = LectureProject_1;
 			sourceTree = "<group>";
