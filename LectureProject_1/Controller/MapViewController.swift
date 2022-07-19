@@ -19,14 +19,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var latitude = ""
     var longitude = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
-        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

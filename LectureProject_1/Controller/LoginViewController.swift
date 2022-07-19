@@ -18,15 +18,29 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var animationLabel: UILabel!
     @IBOutlet weak var dummyView: UILabel!
     @IBOutlet weak var registerOutlet: UIButton!
-    
+
     
     var users = [User]()
     var animationPage: [CountryModel]?
     var jsonData = URL(string: "")
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // if user has logged in previously, present the main view controller
+        if !checkUsers()
+        {
+            let controller = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
+            show(controller, sender: nil)
+            self.navigationItem.leftBarButtonItem = nil
+        }
+        else
+        {
+            let controller = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            show(controller, sender: nil)
+
+        }
         
         underlineButton()
         tapGesture()
@@ -42,6 +56,18 @@ class LoginViewController: UIViewController {
         passwordTextField.text = "12345"
         
         jsonData = getDocumentsDirectoryUrl().appendingPathComponent("Users.json")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+     
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+            
+           
+
     }
     
     // Underline Button first code
@@ -175,8 +201,6 @@ class LoginViewController: UIViewController {
         if let file = jsonData, let data = try? Data(contentsOf: file) {
             do {
                 users = try JSONDecoder().decode([User].self, from: data)
-                
-                
             }
             catch {
                 print(error.localizedDescription)
@@ -209,7 +233,9 @@ class LoginViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             
         }
+
     }
+    
     
     @IBAction func registerAction(_ sender: Any) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController

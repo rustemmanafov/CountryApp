@@ -38,6 +38,8 @@ class RegisterViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
+
+        
     }
     
     @objc func dismissKeyboard() {

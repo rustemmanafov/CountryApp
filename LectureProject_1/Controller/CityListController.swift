@@ -29,7 +29,6 @@ class CityListController: UIViewController {
             UIView.animate(withDuration: self.animationDuration, delay: delay, options: .curveEaseOut, animations: {
                 cell.alpha = 1
             })
-            
         }
         let column = Double(cell.frame.minX / cell.frame.width)
         let row = Double(cell.frame.minY / cell.frame.height)
