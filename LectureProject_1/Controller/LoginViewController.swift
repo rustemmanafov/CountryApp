@@ -1,4 +1,4 @@
-//
+
 //  LoginViewController.swift
 //  LectureProject_1
 //
@@ -28,20 +28,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // if user has logged in previously, present the main view controller
-        if !checkUsers()
-        {
-            let controller = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
-            show(controller, sender: nil)
-            self.navigationItem.leftBarButtonItem = nil
-        }
-        else
-        {
-            let controller = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            show(controller, sender: nil)
-
-        }
-        
         underlineButton()
         tapGesture()
         animateSetup()
@@ -56,18 +42,6 @@ class LoginViewController: UIViewController {
         passwordTextField.text = "12345"
         
         jsonData = getDocumentsDirectoryUrl().appendingPathComponent("Users.json")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-        
-     
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-            
-           
-
     }
     
     // Underline Button first code

@@ -2,7 +2,7 @@
 //  CountryCell.swift
 //  LectureProject_1
 //
-//  Created by Shamkhal Guliyev on 28.06.22.
+//  Created by Rustam Manafov on 28.06.22.
 //
 
 import UIKit

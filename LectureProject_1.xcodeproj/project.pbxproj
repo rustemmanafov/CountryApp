@@ -46,6 +46,7 @@
 		46C9309328836E8E00E6641A /* new-york-gezi-rehberi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9309028836E8E00E6641A /* new-york-gezi-rehberi.jpg */; };
 		46C9309428836E8E00E6641A /* New_york3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46C9309128836E8E00E6641A /* New_york3.jpg */; };
 		46C930962884216E00E6641A /* CityPlacesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C930952884216E00E6641A /* CityPlacesMapViewController.swift */; };
+		46C930C42888A52400E6641A /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46C930C22888A52400E6641A /* CoreData.xcdatamodeld */; };
 		46DCB963287064D400CC0931 /* Country.json in Resources */ = {isa = PBXBuildFile; fileRef = 46DCB962287064D400CC0931 /* Country.json */; };
 		46DCB96528706DB400CC0931 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCB96428706DB400CC0931 /* LoginViewController.swift */; };
 		46DCB96E2872461E00CC0931 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCB96D2872461E00CC0931 /* NavigationViewController.swift */; };
@@ -104,6 +105,9 @@
 		46C9309028836E8E00E6641A /* new-york-gezi-rehberi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "new-york-gezi-rehberi.jpg"; sourceTree = "<group>"; };
 		46C9309128836E8E00E6641A /* New_york3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = New_york3.jpg; sourceTree = "<group>"; };
 		46C930952884216E00E6641A /* CityPlacesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPlacesMapViewController.swift; sourceTree = "<group>"; };
+		46C930C32888A52400E6641A /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		46C930C52888A86200E6641A /* List+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		46C930C62888A86200E6641A /* List+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+CoreDataClass.swift"; sourceTree = "<group>"; };
 		46DCB962287064D400CC0931 /* Country.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Country.json; sourceTree = "<group>"; };
 		46DCB96428706DB400CC0931 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46DCB96D2872461E00CC0931 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +142,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46C9306A288369CB00E6641A /* Pictures */ = {
+		46C9306A288369CB00E6641A /* City Pictures */ = {
 			isa = PBXGroup;
 			children = (
 				46C9305E2882DD3D00E6641A /* 15783565219_bf79b50510_b.jpg */,
@@ -169,7 +173,17 @@
 				46C93066288369BF00E6641A /* xan bagi.jpg */,
 				46C9305F2882DD3D00E6641A /* bakuboulevard1.jpg */,
 			);
-			path = Pictures;
+			path = "City Pictures";
+			sourceTree = "<group>";
+		};
+		46C930C72888A86200E6641A /* Core Date Group */ = {
+			isa = PBXGroup;
+			children = (
+				46C930C52888A86200E6641A /* List+CoreDataProperties.swift */,
+				46C930C62888A86200E6641A /* List+CoreDataClass.swift */,
+			);
+			name = "Core Date Group";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		46DCB9662871D91600CC0931 /* JSON  */ = {
@@ -221,7 +235,6 @@
 				46DCB96D2872461E00CC0931 /* NavigationViewController.swift */,
 				46DCB96428706DB400CC0931 /* LoginViewController.swift */,
 				46C400452879A95C00DEB091 /* RegisterViewController.swift */,
-				46DCB96B287222E900CC0931 /* Model */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,15 +263,18 @@
 				47A5D8A62866DA4D00B6BD4E /* AppDelegate.swift */,
 				47A5D8A82866DA4D00B6BD4E /* SceneDelegate.swift */,
 				47A5D8AC2866DA4D00B6BD4E /* Main.storyboard */,
+				46C930C72888A86200E6641A /* Core Date Group */,
+				46C930C22888A52400E6641A /* CoreData.xcdatamodeld */,
 				46DCB9662871D91600CC0931 /* JSON  */,
 				477937FA286B336200EEF403 /* Cell */,
 				477937FB286B336800EEF403 /* Controller */,
 				46DCB96C2872230400CC0931 /* Protocol */,
-				47A5D8AF2866DA4E00B6BD4E /* Assets.xcassets */,
+				46DCB96B287222E900CC0931 /* Model */,
 				47A5D8B12866DA4E00B6BD4E /* LaunchScreen.storyboard */,
+				47A5D8AF2866DA4E00B6BD4E /* Assets.xcassets */,
 				47A5D8B42866DA4E00B6BD4E /* Info.plist */,
 				476C3E742866F53B001EA77A /* design.png */,
-				46C9306A288369CB00E6641A /* Pictures */,
+				46C9306A288369CB00E6641A /* City Pictures */,
 			);
 			path = LectureProject_1;
 			sourceTree = "<group>";
@@ -430,6 +446,7 @@
 			files = (
 				463A3992286DFFD60099B264 /* NewTableViewCell.swift in Sources */,
 				46DCB96E2872461E00CC0931 /* NavigationViewController.swift in Sources */,
+				46C930C42888A52400E6641A /* CoreData.xcdatamodeld in Sources */,
 				47A5D8BD2866F15900B6BD4E /* CityListController.swift in Sources */,
 				46C400462879A95C00DEB091 /* RegisterViewController.swift in Sources */,
 				47A5D8A72866DA4D00B6BD4E /* AppDelegate.swift in Sources */,
@@ -670,6 +687,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46C930C22888A52400E6641A /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46C930C32888A52400E6641A /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 46C930C32888A52400E6641A /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 47A5D89B2866DA4D00B6BD4E /* Project object */;
 }

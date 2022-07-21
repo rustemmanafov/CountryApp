@@ -42,8 +42,6 @@ class CountryListController: UIViewController, NewTableViewCellDelegate {
         
     }
     
-    
-    
     func jsonSetup() {
         if let jsonFile = Bundle.main.url(forResource: "Country", withExtension: "json"), let data = try? Data(contentsOf: jsonFile){
             do{

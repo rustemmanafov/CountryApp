@@ -38,8 +38,6 @@ class RegisterViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-
-        
     }
     
     @objc func dismissKeyboard() {
@@ -116,9 +114,14 @@ extension RegisterViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        genderTextField.text = genderArr[row]
-        genderTextField.resignFirstResponder()
+        
+            genderTextField.text = genderArr[row]
+            genderTextField.resignFirstResponder()
+            genderTextField.isUserInteractionEnabled = false
+
     }
+    
+
     
     
 }
