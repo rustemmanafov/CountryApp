@@ -19,11 +19,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var dummyView: UILabel!
     @IBOutlet weak var registerOutlet: UIButton!
 
-    
     var users = [User]()
     var animationPage: [CountryModel]?
     var jsonData = URL(string: "")
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()

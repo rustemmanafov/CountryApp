@@ -117,7 +117,7 @@ extension RegisterViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         
             genderTextField.text = genderArr[row]
             genderTextField.resignFirstResponder()
-            genderTextField.isUserInteractionEnabled = false
+            //genderTextField.isUserInteractionEnabled = false
 
     }
     

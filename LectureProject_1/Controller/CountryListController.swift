@@ -31,13 +31,7 @@ class CountryListController: UIViewController, NewTableViewCellDelegate {
         print("Worked")
         
         let controller = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-        
-        controller.firstNameLbl?.text = profile?.firstName
-        controller.lastNameLbl?.text = profile?.lastName
-        controller.emailLbl?.text = profile?.email
-        controller.passwordLbl?.text = profile?.password
-        controller.genderLbl?.text = profile?.gender
-        
+       // controller.profile = profile
         show(controller, sender: nil)
         
     }

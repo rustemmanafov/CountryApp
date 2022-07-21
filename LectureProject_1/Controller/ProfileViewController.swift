@@ -25,13 +25,8 @@ class ProfileViewController: UIViewController {
         lastNameLbl.text = profile?.lastName
         emailLbl.text = profile?.email
         passwordLbl.text = profile?.password
-        genderLbl.text = profile?.gender
-        
-        
+//        genderLbl.text = profile?.gender
 
     }
     
-
-   
-
 }

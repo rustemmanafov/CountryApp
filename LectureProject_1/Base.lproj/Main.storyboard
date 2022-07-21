@@ -542,6 +542,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kez-s1-mUN">
+                                <rect key="frame" x="20" y="634" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xvk-YO-q9n"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -549,6 +555,7 @@
                     <connections>
                         <outlet property="emailLbl" destination="kBj-gL-ugq" id="Z0F-kv-wt0"/>
                         <outlet property="firstNameLbl" destination="E9Y-jA-E42" id="ErO-vq-Ppl"/>
+                        <outlet property="genderLbl" destination="kez-s1-mUN" id="9Bg-ch-xx1"/>
                         <outlet property="imageLbl" destination="Loq-ep-LaO" id="viO-IQ-Pcj"/>
                         <outlet property="lastNameLbl" destination="h0w-sU-FvK" id="HdK-01-49E"/>
                         <outlet property="passwordLbl" destination="ZN9-yE-LHy" id="fVE-Mr-c6X"/>
