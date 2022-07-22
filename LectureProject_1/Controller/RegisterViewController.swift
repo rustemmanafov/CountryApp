@@ -89,7 +89,6 @@ class RegisterViewController: UIViewController {
         }
     }
     
-    
     @IBAction func showPassword(_ sender: Any) {
         
         passwordTextField.isSecureTextEntry = false

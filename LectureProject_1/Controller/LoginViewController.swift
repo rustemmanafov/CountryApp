@@ -12,11 +12,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var buttonLabel: UIButton!
-    @IBOutlet weak var emailLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var passwordTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var animationView: UIView!
     @IBOutlet weak var animationLabel: UILabel!
-    @IBOutlet weak var dummyView: UILabel!
     @IBOutlet weak var registerOutlet: UIButton!
 
     var users = [User]()
@@ -27,16 +24,14 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         underlineButton()
-        tapGesture()
         animateSetup()
         uiSetup()
-        // greetingView()
+        greetingView()
         basicCornerAnimation()
         basicRotateAnimation()
-        transformAnimation()
-        
+       
         // auto filling textfields when opening login view
-        emailTextField.text = "test@mail.com"
+        emailTextField.text = "rustam@mail.com"
         passwordTextField.text = "12345"
         
         jsonData = getDocumentsDirectoryUrl().appendingPathComponent("Users.json")
@@ -56,22 +51,22 @@ class LoginViewController: UIViewController {
         .foregroundColor: UIColor.black,
         .underlineStyle: NSUnderlineStyle.single.rawValue ]
     
-    func tapGesture(){
-        let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.tapFunction))
-        self.dummyView.isUserInteractionEnabled = true
-        self.dummyView.addGestureRecognizer(tap)
-    }
+//    func tapGesture(){
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.tapFunction))
+//        self.dummyView.isUserInteractionEnabled = true
+//        self.dummyView.addGestureRecognizer(tap)
+//    }
     
     @objc func tapFunction(sender:UITapGestureRecognizer) {
         print("tap working")
     }
     
-    func transformAnimation(){
-        UIView.animate(withDuration: 2, delay: 0, options: [.autoreverse, .repeat]) {
-            self.dummyView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-            
-        }
-    }
+//    func transformAnimation(){
+//        UIView.animate(withDuration: 2, delay: 0, options: [.autoreverse, .repeat]) {
+//            self.dummyView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+//
+//        }
+//    }
     
     func basicCornerAnimation(){
         let animation = CABasicAnimation(keyPath: "cornerRadius")

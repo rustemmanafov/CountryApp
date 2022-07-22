@@ -10,6 +10,7 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     var profile: User?
+    var jsonFile = URL(string: "")
     
     @IBOutlet weak var firstNameLbl: UITextField!
     @IBOutlet weak var lastNameLbl: UITextField!
@@ -25,8 +26,21 @@ class ProfileViewController: UIViewController {
         lastNameLbl.text = profile?.lastName
         emailLbl.text = profile?.email
         passwordLbl.text = profile?.password
-//        genderLbl.text = profile?.gender
+        genderLbl.text = profile?.gender
 
+        jsonSetup()
     }
+    
+    func jsonSetup() {
+        if let file = jsonFile, let data = try? Data(contentsOf: file) {
+            do {
+                profile = try JSONDecoder().decode(User.self, from: data)
+                
+            } catch {
+                print(error.localizedDescription)
+            }
+        } 
+    }
+    
     
 }

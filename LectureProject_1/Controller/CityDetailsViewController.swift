@@ -19,8 +19,6 @@ class CityDetailsViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
-   
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         cityPlaces.count
     }
