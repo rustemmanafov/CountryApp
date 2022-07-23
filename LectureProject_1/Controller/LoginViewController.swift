@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
         basicRotateAnimation()
        
         // auto filling textfields when opening login view
-        emailTextField.text = "rustam@mail.com"
+        emailTextField.text = "rustam@yahoo.com"
         passwordTextField.text = "12345"
         
         jsonData = getDocumentsDirectoryUrl().appendingPathComponent("Users.json")
@@ -180,6 +180,7 @@ class LoginViewController: UIViewController {
         var i = 0
         while i < users.count {
             if emailTextField.text == users[i].email && passwordTextField.text == users[i].password {
+                UserDefaults.standard.setValue(users[i].email, forKey: "loggedMail")
                 return true
             }
             i += 1
@@ -190,9 +191,11 @@ class LoginViewController: UIViewController {
     @IBAction func enterAction(_ sender: Any) {
         jsonCalled()
         if checkUsers() {
-            let homeViewController = storyboard?.instantiateViewController(withIdentifier: "UINavigationController") as! UINavigationController
-            self.view.window?.rootViewController = homeViewController
-            self.view.window?.makeKeyAndVisible()
+            UserDefaults.standard.set(true, forKey: "isLoggedIn")  // FLAG
+            let controller = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
+            let navigationController = UINavigationController(rootViewController: controller)
+            navigationController.modalPresentationStyle = .overFullScreen
+            present(navigationController, animated: true, completion: nil)
             
         } else{
             let alert = UIAlertController(title: "Alert", message: "Something went wrong", preferredStyle: .alert)
@@ -203,11 +206,9 @@ class LoginViewController: UIViewController {
 
     }
     
+    
     @IBAction func registerAction(_ sender: Any) {
-        UserDefaults.standard.set(traitCollection, forKey: "isLoggedIn")  // FLAG
-        let controller = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
-        let navigationController = UINavigationController(rootViewController: controller)
-        navigationController.modalPresentationStyle = .overFullScreen
-        present(navigationController, animated: true, completion: nil)
+        let controller = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        show(controller, sender: nil)
     }
 }
