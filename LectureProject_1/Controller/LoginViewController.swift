@@ -203,9 +203,11 @@ class LoginViewController: UIViewController {
 
     }
     
-    
     @IBAction func registerAction(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
-        show(controller, sender: nil)
+        UserDefaults.standard.set(traitCollection, forKey: "isLoggedIn")  // FLAG
+        let controller = storyboard?.instantiateViewController(withIdentifier: "CountryListController") as! CountryListController
+        let navigationController = UINavigationController(rootViewController: controller)
+        navigationController.modalPresentationStyle = .overFullScreen
+        present(navigationController, animated: true, completion: nil)
     }
 }
