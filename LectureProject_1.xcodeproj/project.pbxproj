@@ -10,10 +10,10 @@
 		463A3992286DFFD60099B264 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A3990286DFFD60099B264 /* NewTableViewCell.swift */; };
 		463A3993286DFFD60099B264 /* NewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463A3991286DFFD60099B264 /* NewTableViewCell.xib */; };
 		46939750286B565800C7413B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693974F286B565800C7413B /* Model.swift */; };
+		46BB6EDD288EBE450083DA3D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB6EDC288EBE450083DA3D /* MapViewController.swift */; };
 		46C400462879A95C00DEB091 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C400452879A95C00DEB091 /* RegisterViewController.swift */; };
 		46C400482879A96C00DEB091 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C400472879A96C00DEB091 /* ProfileViewController.swift */; };
 		46C4004C287CCB0800DEB091 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 46C4004B287CCB0800DEB091 /* Users.json */; };
-		46C4004E287F10A500DEB091 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C4004D287F10A500DEB091 /* MapViewController.swift */; };
 		46C4005028800C6B00DEB091 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C4004F28800C6B00DEB091 /* MapKit.framework */; };
 		46C4005228801CA300DEB091 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C4005128801CA300DEB091 /* CoreLocation.framework */; };
 		46C930582882D8A400E6641A /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C930572882D8A400E6641A /* CityDetailsViewController.swift */; };
@@ -67,10 +67,10 @@
 		463A3990286DFFD60099B264 /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 		463A3991286DFFD60099B264 /* NewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTableViewCell.xib; sourceTree = "<group>"; };
 		4693974F286B565800C7413B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		46BB6EDC288EBE450083DA3D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		46C400452879A95C00DEB091 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		46C400472879A96C00DEB091 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		46C4004B287CCB0800DEB091 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
-		46C4004D287F10A500DEB091 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		46C4004F28800C6B00DEB091 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46C4005128801CA300DEB091 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		46C930572882D8A400E6641A /* CityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +135,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46BB6EDA288EBD450083DA3D /* City */ = {
+			isa = PBXGroup;
+			children = (
+				46C930952884216E00E6641A /* CityPlacesMapViewController.swift */,
+				46C930572882D8A400E6641A /* CityDetailsViewController.swift */,
+				47A5D8BC2866F15900B6BD4E /* CityListController.swift */,
+				47A5D8BE2866F17000B6BD4E /* CityController.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
 		46C9306A288369CB00E6641A /* City Pictures */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,12 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				47A5D8BA2866F14900B6BD4E /* CountryListController.swift */,
-				46C930952884216E00E6641A /* CityPlacesMapViewController.swift */,
-				46C930572882D8A400E6641A /* CityDetailsViewController.swift */,
-				46C4004D287F10A500DEB091 /* MapViewController.swift */,
+				46BB6EDC288EBE450083DA3D /* MapViewController.swift */,
 				46C400472879A96C00DEB091 /* ProfileViewController.swift */,
-				47A5D8BC2866F15900B6BD4E /* CityListController.swift */,
-				47A5D8BE2866F17000B6BD4E /* CityController.swift */,
 				46DCB96D2872461E00CC0931 /* NavigationViewController.swift */,
 				46DCB96428706DB400CC0931 /* LoginViewController.swift */,
 				46C400452879A95C00DEB091 /* RegisterViewController.swift */,
@@ -248,6 +255,7 @@
 				47A5D8AC2866DA4D00B6BD4E /* Main.storyboard */,
 				46DCB9662871D91600CC0931 /* JSON  */,
 				477937FA286B336200EEF403 /* Cell */,
+				46BB6EDA288EBD450083DA3D /* City */,
 				477937FB286B336800EEF403 /* Controller */,
 				46DCB96C2872230400CC0931 /* Protocol */,
 				46DCB96B287222E900CC0931 /* Model */,
@@ -437,10 +445,10 @@
 				47A5D8BB2866F14900B6BD4E /* CountryListController.swift in Sources */,
 				46C930962884216E00E6641A /* CityPlacesMapViewController.swift in Sources */,
 				46C400482879A96C00DEB091 /* ProfileViewController.swift in Sources */,
+				46BB6EDD288EBE450083DA3D /* MapViewController.swift in Sources */,
 				46DCB96528706DB400CC0931 /* LoginViewController.swift in Sources */,
 				46C930582882D8A400E6641A /* CityDetailsViewController.swift in Sources */,
 				46939750286B565800C7413B /* Model.swift in Sources */,
-				46C4004E287F10A500DEB091 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
