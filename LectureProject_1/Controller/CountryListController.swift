@@ -64,7 +64,7 @@ class CountryListController: UIViewController, NewTableViewCellDelegate {
         
     }
     
-    func navigate(index: Int){
+    func navigate(index: Int) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "CityListController") as! CityListController
         controller.citymodel = model[index].cities
         controller.title = model[index].name
@@ -74,6 +74,7 @@ class CountryListController: UIViewController, NewTableViewCellDelegate {
 }
 
 extension CountryListController: UITableViewDataSource, UITableViewDelegate {
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         model.count
     }
