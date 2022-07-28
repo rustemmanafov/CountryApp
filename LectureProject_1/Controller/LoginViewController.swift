@@ -180,6 +180,7 @@ class LoginViewController: UIViewController {
         var i = 0
         while i < users.count {
             if emailTextField.text == users[i].email && passwordTextField.text == users[i].password {
+                // for profile vc
                 UserDefaults.standard.setValue(users[i].email, forKey: "loggedMail")
                 return true
             }
