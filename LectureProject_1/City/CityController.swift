@@ -36,13 +36,10 @@ class CityController: UIViewController {
         navigationController?.show(controller, sender: nil)
     }
     
-    @objc func addTapped(){
-        print("Worked")
-        
+    @objc func addTapped(){        
         let controller = storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
         controller.latitude = city?.coordinatex ?? ""
         controller.longitude = city?.coordinatey ?? ""
-
         show(controller, sender: nil)
         
     }
